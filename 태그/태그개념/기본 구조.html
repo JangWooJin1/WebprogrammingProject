@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Webprogramming요약</title>
+	<link rel="stylesheet" type="text/css" href="../../css/태그.css">
+	<script type="text/javascript" src="../../script/서브메뉴.js"></script>
+</head>
+<body>
+	<header id="header"> <!--메뉴바-->
+	<div class="소개">
+		<h1>
+			<a href="../../메뉴바.html">Webprogramming</a>
+		</h1>
+		<p>
+			something for nothing
+		</p>
+	</div>
+	<nav class="메뉴바">
+		<ul>
+			<li>
+				<span onmouseover="메뉴보이기('숨김01')" >HTML5</span>
+			</li>
+			<li>
+				<a href="../프로퍼티/css목차.html"
+				onmouseover="메뉴보이기('숨김02')">CSS3</a>
+			</li>
+			<li>
+				<a href="../자바/자바목차.html"
+				onmouseover="메뉴보이기('숨김03')" >Javascript</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<article>
+	<!--숨김메뉴1번-->
+	<table class="숨김메뉴전체" id="숨김01" onmouseover="메뉴보이기('숨김01');" onmouseout="메뉴숨기기()" >
+    <tr>
+      <td><span>HTML기본</span></td>
+      </tr>
+        <tr>
+      <td><a href="../태그목차.html">HTML태그</a></td>
+     </tr>
+    </table>
+
+    <!--숨김메뉴2번-->
+    <table class="숨김메뉴전체" id="숨김02" onmouseover="메뉴보이기('숨김02');" onmouseout="메뉴숨기기()" >
+    <tr>
+      <td><a href="../../프로퍼티/css개념/css개념목차.html">CSS3기본</a></td>
+      </tr>
+        <tr>
+      <td><a href="../../프로퍼티/css목차.html">CSS3프로퍼티</a></td>
+     </tr>
+    </table>
+
+    <!--숨김메뉴3번-->
+    <table class="숨김메뉴전체" id="숨김03" onmouseover="메뉴보이기('숨김03');" onmouseout="메뉴숨기기()" >
+    <tr>
+      <td><a href="../../자바/자바개념/자바개념목차.html">Javascript기본</a></td>
+      </tr>
+        <tr>
+      <td><a href="../../자바/자바목차.html">Javascript내용</a></td>
+     </tr>
+    </table> <!--서브메뉴-->
+</article>
+<aside> <!--태그 목차-->
+	<a href="HTML5의 역할.html"> HTML5의 역할 </a><br><br>
+
+	<span> 기본 구조 </span><br><br>
+
+	<a href="태그.html"> 태그 </a> <br> <br>
+</aside>
+<section><!--태그 설명-->
+	<h1>기본 구조</h1>
+	<hr>
+	<br><br><br>
+	<dl>
+		<dt>&lt;!DOCTYPE html&gt;</dt>
+		<dd>HTML5 문서임을 브라우저에 알리는 지시어로서 반드시 첫 줄에 나와야 한다</dd>
+	</dl>
+	<br><br><br>
+	<dl>
+		<dt>&lt;head&gt;</dt>
+		<dd>문서의 제목, 본문을 설명하는 메타 태그들, 자바스크립트 코드와 CSS 스타일 시트 등을 포함하며 문서의 본문은 포함되지 않는다</dd>
+	</dl>
+	<br><br><br>
+	<dl>
+		<dt>&lt;body&gt;</dt>
+		<dd>문서의 본문을 포함하며 이곳은 자바스크립트 코드를 포함할 수 있다</dd>
+	</dl>
+	<br><br><br>
+	<dl>
+		<dt>&lt;!--주석문--&gt;</dt>
+		<dd>HTML 문서 내에 간단한 설명을 다는 주석문으로 브라우저에 의해 출력되지 않는다.</dd>
+	</dl>
+	<br><br><br>
+	<img src="기본 구조.png" width="900" height="300">
+</section>
+</body>
+</html>

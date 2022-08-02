@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Webprogramming요약</title>
+	<link rel="stylesheet" type="text/css" href="../../css/css.css">
+	<script type="text/javascript" src="../../script/서브메뉴.js"></script>
+</head>
+<body>
+<header id="header"> <!--메뉴바-->
+	<div class="소개">
+		<h1>
+			<a href="../../메뉴바.html">Webprogramming</a>
+		</h1>
+		<p>
+			something for nothing
+		</p>
+	</div>
+	<nav class="메뉴바">
+		<ul>
+			<li>
+				<a href="../../태그/태그목차.html" onmouseover="메뉴보이기('숨김01')" >HTML5</a>
+			</li>
+			<li>
+				<span onmouseover="메뉴보이기('숨김02')">CSS3</span>
+			</li>
+			<li>
+				<a href="../../자바/자바목차.html"
+				onmouseover="메뉴보이기('숨김03')" >Javascript</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<article>
+	<!--숨김메뉴1번-->
+	<table class="숨김메뉴전체" id="숨김01" onmouseover="메뉴보이기('숨김01');" onmouseout="메뉴숨기기()" >
+    <tr>
+      <td><a href="../../태그/태그개념/태그개념목차.html">HTML기본</a></td>
+      </tr>
+        <tr>
+      <td><a href="../../태그/태그목차.html">HTML태그</a></td>
+     </tr>
+    </table>
+
+    <!--숨김메뉴2번-->
+    <table class="숨김메뉴전체" id="숨김02" onmouseover="메뉴보이기('숨김02');" onmouseout="메뉴숨기기()" >
+    <tr>
+      <td><span>CSS3기본</span></td>
+      </tr>
+        <tr>
+      <td><a href="../css목차.html">CSS3프로퍼티</a></td>
+     </tr>
+    </table>
+
+    <!--숨김메뉴3번-->
+    <table class="숨김메뉴전체" id="숨김03" onmouseover="메뉴보이기('숨김03');" onmouseout="메뉴숨기기()" >
+    <tr>
+      <td><a href="../../자바/자바개념/자바개념목차.html">Javascript기본</a></td>
+      </tr>
+        <tr>
+      <td><a href="../../자바/자바목차.html">Javascript내용</a></td>
+     </tr>
+    </table> <!--서브메뉴--><!--서브메뉴-->
+</article>
+<aside> <!--css 목차-->
+	<a href="기본 구성.html">기본 구성</a> <br><br>
+
+	<span>규칙</span> <br><br>
+
+	<a href="셀럭터 종류.html">셀렉터 종류</a> <br><br>
+
+	<a href="셀렉터 조합하기.html">셀렉터 조합하기</a> <br><br>
+</aside>
+<section>
+<h1>규칙</h1>
+	<hr>
+	<br><br><br>
+	<dl>
+		<dt>상속</dt>
+		<dd>자신을 둘러싸는 태그(부모 태그)에 적용된 스타일은 자식태그에 상속된다</dd>
+	</dl>
+	<br><br><br>
+	<dl>
+		<dt>스타일 시트 동시적용</dt>
+		<dd>여러가지 스타일 시트가 동시에 적용될 때 합쳐져서 적용되는 것을 스타일 합치기라고 한다 </dd> <br>
+		<dd>하지만 서로 충돌하는게 있으면 우선 순위가 높은걸 선택한다(스타일 오버라이딩)</dd>
+		<dd>우선 순위 : style속성 > style태그 > 외부 스타일 시트</dd>
+	</dl>
+</section>
+</body>
+</html>
